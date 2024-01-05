@@ -15,7 +15,7 @@ public class TabibDbContext : DbContext
     public TabibDbContext(DbContextOptions<TabibDbContext> options)
         : base(options)
     {
-        Database.Migrate();
+        Database.EnsureCreated();
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

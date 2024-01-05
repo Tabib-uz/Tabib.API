@@ -12,5 +12,8 @@ public class Doctor : EntityBase
     public string Education { get; set; }
     public Gender Gender { get; set; }
 
+    public int LocationId { get; set; }
+    public Location Location { get; set; }
+
     public virtual ICollection<DoctorSpecialization> Specializations { get; set; }
 }
