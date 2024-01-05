@@ -1,4 +1,4 @@
-namespace Tabib.API
+namespace Tabib.Api
 {
     public class WeatherForecast
     {

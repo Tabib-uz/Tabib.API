@@ -1,8 +1,16 @@
-﻿namespace Tabib.Domain.Entities
+﻿using Tabib.Domain.Common;
+using Tabib.Domain.Enums;
+
+namespace Tabib.Domain.Entities;
+
+public class Doctor : EntityBase
 {
-    internal class Doctor
-    {
-        public int Id { get; set; }
-        public string Name { get; set; }
-    }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string Clinic { get; set; }
+    public string Experience { get; set; }
+    public string Education { get; set; }
+    public Gender Gender { get; set; }
+
+    public virtual ICollection<DoctorSpecialization> Specializations { get; set; }
 }
